@@ -12,7 +12,8 @@ u8 rb(u16 addr)
     {
         if(addr>=handlers[i].start && addr<=handlers[i].end) break;
     }
-    if(handlers[i].wb != NULL) return handlers[i].rb(addr-handlers[i].start);
+    if(handlers[i].rb != NULL)
+        return handlers[i].rb(addr-handlers[i].start);
     else return 0;
 }
 void wb(u16 addr, u8 value)

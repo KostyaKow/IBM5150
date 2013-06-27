@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-g -O3 -std=c++11
+CFLAGS=-g -std=c++11 -O3
 LIBS=-lSDL
 
 all:
@@ -7,3 +7,8 @@ all:
 
 clean:
 	rm ibm5150
+
+
+#for code::blocks
+Release: all
+Debug: all

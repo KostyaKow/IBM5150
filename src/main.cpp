@@ -23,7 +23,7 @@ int main(int ac, char** av)
 {
     if(ac < 4)
     {
-        printf("Usage:\n\tibm5150 biosFile configFile mda.cfg\n");
+        printf("Usage:\n\tibm5150 biosFile.bin mdaFile.bin mda.cfg\n");
         return 1;
     }
 
